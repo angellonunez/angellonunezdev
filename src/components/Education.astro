@@ -1,0 +1,29 @@
+---
+import EducationItem from "./EducationItem.astro"
+const EDUCATION = [
+  {
+    date: "2023 - Present",
+    title: "Software Engineering",
+    company: "Western Governors University",
+    description:
+      "As a Software Engineering student, I’ve gained hands-on experience in full-stack development, data structures, algorithms, and system design. My academic journey focuses on building scalable and efficient software, with an emphasis on clean code, agile development, and team collaboration.",
+  },
+  {
+    date: "2015 - 2020",
+    title: "Psychology",
+    company: "Pontificia Universidad Católica del Perú",
+    description:
+      "With a background in Psychology, I developed a strong understanding of human behavior, cognition, and research methodologies. This degree sharpened my critical thinking, communication, and data analysis skills, which now give me a unique edge in software development.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EDUCATION.map((education) => (
+      <li class="">
+        <EducationItem {...education} />
+      </li>
+    ))
+  }
+</ol>

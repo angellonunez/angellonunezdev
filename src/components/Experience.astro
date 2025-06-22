@@ -1,0 +1,60 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import Link from "./icons/Link.astro"
+const EXPERIENCE = [
+  {
+    date: "2023 - Present",
+    title: "Founder & Software Developer",
+    company: "Zelandaware",
+    description:
+      "As the founder and developer of my own technology company, I design and develop custom websites and mobile applications for a range of projects. With over four published apps available on both the App Store and Google Play, I work on the full development cycle—from ideation and design to deployment and maintenance.",
+    link: "https://zelandaware.com",
+  },
+  {
+    date: "2023 - Present",
+    title: "Co-Founder, Teacher and Software Developer",
+    company: "Emprezus",
+    description:
+      "As a co-founder and instructor of a Spanish-language educational platform for Latin American entrepreneurs, I help bridge the gap between business and technology. I design and deliver online content focused on entrepreneurship, innovation, and digital skills.",
+    link: "https://emprezus.com",
+  },
+  {
+    date: "2024 - Present",
+    title: "Relationship Banker",
+    company: "Santander Bank",
+    description:
+      "As a trusted advisor to individual and small business clients, I provided tailored financial solutions while building long-term customer relationships. I leveraged data-driven tools to assess financial needs and collaborated with internal teams to deliver seamless banking experiences.",
+  },
+  {
+    date: "2024 - 2024",
+    title: "Data Analyst",
+    company: "Wintrust Life Finance",
+    description:
+      "I supported strategic decision-making by transforming raw data into actionable insights. I developed and maintained reports and databases, identified trends in insurance and financial datasets, and collaborated with cross-functional teams to improve operational efficiency through data.",
+  },
+  {
+    date: "2021 - 2024",
+    title: "Relationship Banker",
+    company: "Bank of America",
+    description:
+      "I guided clients through complex financial products, delivering personalized service and solutions. My role involved analyzing financial information, managing risk, and maintaining compliance, all while strengthening customer loyalty through proactive engagement.",
+  },
+  {
+    date: "2020 - 2021",
+    title: "Coordinator",
+    company: "Marshalls",
+    description:
+      "I oversaw daily operations, team scheduling, and inventory management in a fast-paced retail environment. I led process improvements and supported team development while ensuring a consistent and customer-focused experience across the store.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

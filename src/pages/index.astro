@@ -1,11 +1,61 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro"
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import AboutMe from "../components/AboutMe.astro"
+import Briefcase from "../components/icons/Briefcase.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Experience from "../components/Experience.astro"
+import ProfileCheck from "../components/icons/ProfileCheck.astro"
+import Projects from "../components/Projects.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import Hero from "../components/Hero.astro"
+import TitleSection from "../components/TitleSection.astro"
+import Student from "../components/icons/Student.astro"
+import Education from "../components/Education.astro"
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Angello Nunez - Portfolio - Software Engineer"
+  description="Hire me as a software engineer. I specialize in web development, mobile applications, and UI design. Currently studying Software Engineering at Western Governors University."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="education">
+      <TitleSection>
+        <Student class="size-8" />
+        Education
+      </TitleSection>
+      <Education />
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        Experience
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Projects
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about-me">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        About me
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+  </main>
 </Layout>
