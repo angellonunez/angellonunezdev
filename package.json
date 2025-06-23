@@ -1,17 +1,21 @@
 {
   "name": "portfolio",
+  "homepage": "https://angellonunez.dev",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeplow": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.2.9",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.10.0",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.10"
   }
 }
