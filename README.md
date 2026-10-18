@@ -1,48 +1,34 @@
-# Astro Starter Kit: Basics
+# Angello Nuñez — Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+Personal portfolio at angellonunez.dev, built with Astro, Tailwind CSS, and locally hosted Onest fonts. The public site is in English.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- `npm ci`
+- `npm run dev` — local preview at http://localhost:4321
+- `npm run build` — static production output in `dist/`
+- `npm run preview` — serve the production build
+- `npm run deploy` — builds and publishes to GitHub Pages (only run when publishing is intended)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Content and design
 
-## 🚀 Project Structure
+- `src/data/projects.ts`: featured projects, descriptions, and destinations.
+- `src/components/Hero.astro`: introduction and project badges.
+- `src/components/AboutMe.astro`: personal story.
+- `src/components/Experience.astro` and `Education.astro`: existing career and education history. Dates marked “Present” are inherited from the previous portfolio and should be confirmed by Angello.
+- `src/styles/global.css`: responsive visual design and reduced-motion behavior.
+- `src/layouts/Layout.astro`: language, SEO metadata, and favicon declarations.
 
-Inside of your Astro project, you'll see the following folders and files:
+The favicon alpaca, Peruanify, and Hola Grandpa artwork comes from the owner's existing Hola Grandpa project. Shopperpic is a generated 3D interpretation of the existing green viewfinder mark. Zelandaware's black robotic hand was generated for this portfolio. Optimized transparent WebP assets and PNG favicons are stored in `public/`.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Shopperpic currently uses an email inquiry link: its domain could not be reached and its repository returned 404 for unauthenticated visitors during verification. Replace the destination when its public site is available.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Verification
 
-## 🧞 Commands
+Production build and browser checks passed at 1440, 768, 390, and 320 pixels: no horizontal overflow, broken images, missing anchor targets, or page JavaScript errors. The project navigation and component gallery were checked. External service availability is outside the scope of local UI checks.
 
-All commands are run from the root of the project, from a terminal:
+Compatible dependency updates reduced npm audit findings from 22 to 8. The remaining report includes Astro and build/deployment tooling and requires a separate major-version compatibility review; this is not a claim that every advisory is exploitable in this static site. Run `npm audit` for the current report.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Zenzeito and Emprezus use generated 3D versions of their existing capybara and gold geometric brand marks. Angello’s original portfolio photos are served locally in the header, introduction, and biography. The sunglasses alpaca is retained as an unused alternative. Favicons and the touch icon now show a generated 3D portrait of Angello using a laptop, based on his original photo.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Lecthur and Spendo have transparent 3D icons based on their App Store artwork, displayed in the introduction and app links. The navbar includes the personal 3D logo and “My portfolio”. A flow-root on the body prevents the header margin from exposing a differently colored strip above the page.

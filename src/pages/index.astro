@@ -1,61 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro"
-
-import AboutMe from "../components/AboutMe.astro"
-import Briefcase from "../components/icons/Briefcase.astro"
-import CodeIcon from "../components/icons/Code.astro"
-import Experience from "../components/Experience.astro"
-import ProfileCheck from "../components/icons/ProfileCheck.astro"
-import Projects from "../components/Projects.astro"
-import SectionContainer from "../components/SectionContainer.astro"
-import Hero from "../components/Hero.astro"
-import TitleSection from "../components/TitleSection.astro"
-import Student from "../components/icons/Student.astro"
-import Education from "../components/Education.astro"
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
 ---
-
-<Layout
-  title="Angello Nunez - Portfolio - Software Engineer"
-  description="Hire me as a software engineer. I specialize in web development, mobile applications, and UI design. Currently studying Software Engineering at Western Governors University."
->
-  <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
-    </SectionContainer>
-    <div class="space-y-24">
-    <SectionContainer id="education">
-      <TitleSection>
-        <Student class="size-8" />
-        Education
-      </TitleSection>
-      <Education />
-    </SectionContainer>
-
-    <SectionContainer id="experience">
-      <TitleSection>
-        <Briefcase class="size-8" />
-        Experience
-      </TitleSection>
-      <Experience />
-    </SectionContainer>
-
-    <SectionContainer id="projects">
-      <TitleSection>
-        <CodeIcon class="size-7" />
-        Projects
-      </TitleSection>
-      <Projects />
-    </SectionContainer>
-
-    <SectionContainer id="about-me">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        About me
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-  </div>
+<Layout title="Angello Nuñez — Software Engineer & Product Builder" description="I’m Angello Nuñez, a software engineer and founder in New Jersey. Explore Peruanify, Hola Grandpa, Shopperpic, Zelandaware, Zenzeito, and Emprezus — things I’m building with curiosity and care.">
+  <main id="main">
+    <Hero />
+    <section class="education-section wrap" id="education"><h2>Education</h2><Education /></section>
+    <section class="journey-section wrap" id="experience"><h2>Experience</h2><Experience /></section>
+    <section class="work-section wrap" id="projects"><h2>Projects</h2><Projects /></section>
+    <AboutMe />
   </main>
 </Layout>
