@@ -51,7 +51,7 @@ section, article[id], .more-grid a[id] { scroll-margin-top: 100px; }
 .site-header nav a { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 13px; border-radius: 12px; color: var(--muted); transition: background .2s, color .2s; }
 .site-header nav a:hover, .site-header nav a:focus-visible { background: var(--surface); color: var(--highlight); }
 .hero { padding-top: 110px; padding-bottom: 96px; }
-.hero-copy { max-width: 576px; }
+.hero-copy { width: 100%; }
 .profile-avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 12px #0002; }
 h1 { font-size: 48px; font-weight: 700; line-height: 1.1; letter-spacing: -1.8px; margin: 0; }
 .hero-intro { font-size: 20px; margin: 24px 0 0; }
