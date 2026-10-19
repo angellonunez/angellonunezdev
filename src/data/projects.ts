@@ -12,18 +12,6 @@ export const projects = [
     link: "Explore the community",
   },
   {
-    id: "hola-grandpa",
-    name: "Hola Grandpa",
-    image: "grandpa",
-    category: "PERSONAL · STORYTELLING",
-    color: "lavender",
-    description: "Some things deserve a letter.",
-    detail:
-      "Letters to my grandpa about life, the little moments, and everything I still want to tell him.",
-    href: "https://www.holagrandpa.com",
-    link: "Read the letters",
-  },
-  {
     id: "shopperpic",
     name: "Shopperpic",
     image: "shopperpic",

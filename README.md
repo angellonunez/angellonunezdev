@@ -19,7 +19,7 @@ Personal portfolio at angellonunez.dev, built with Astro, Tailwind CSS, and loca
 - `src/styles/global.css`: responsive visual design and reduced-motion behavior.
 - `src/layouts/Layout.astro`: language, SEO metadata, and favicon declarations.
 
-The favicon alpaca, Peruanify, and Hola Grandpa artwork comes from the owner's existing Hola Grandpa project. Shopperpic is a generated 3D interpretation of the existing green viewfinder mark. Zelandaware's black robotic hand was generated for this portfolio. Optimized transparent WebP assets and PNG favicons are stored in `public/`.
+The alternative alpaca favicon and Peruanify artwork come from the owner's existing asset collection. Shopperpic is a generated 3D interpretation of the existing green viewfinder mark. Zelandaware's black robotic hand was generated for this portfolio. Optimized transparent WebP assets and PNG favicons are stored in `public/`.
 
 Shopperpic currently uses an email inquiry link: its domain could not be reached and its repository returned 404 for unauthenticated visitors during verification. Replace the destination when its public site is available.
 
