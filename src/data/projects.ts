@@ -52,4 +52,8 @@ export const projects = [
 export const appProjects = [
   { id: "lecthur", name: "Lecthur", image: "lecthur", description: "Visual learning, a few minutes at a time.", href: "https://apps.apple.com/us/app/lecthur/id6468351147" },
   { id: "spendo", name: "Spendo", image: "spendo", description: "A conversational approach to tracking expenses.", href: "https://apps.apple.com/us/app/spendo-budget-saving-ai/id6744425096" },
+  { id: "datespots", name: "DateSpots", image: "datespots", description: "A shared map of favorite places, photos, and memories for couples.", href: "https://apps.apple.com/us/app/datespots-couple-memory-map/id6759365840" },
+  { id: "petsnack", name: "PetSnack", image: "petsnack", description: "Explore pet food information with AI-powered photo analysis.", href: "https://apps.apple.com/us/app/petsnack-pet-food-safety/id6760993652" },
+  { id: "resume-builder", name: "AI Resume Builder", image: "resume-builder", description: "Turn your experience into a resume with AI writing tools and PDF export.", href: "https://apps.apple.com/us/app/ai-resume-builder-cv-creator/id6744278807" },
+  { id: "logo-maker", name: "AI Logo Maker", image: "logo-maker", description: "Explore, customize, and export logo ideas for your next project.", href: "https://apps.apple.com/us/app/ai-logo-maker-easy-creator/id6743640992" },
 ];

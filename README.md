@@ -32,3 +32,5 @@ Compatible dependency updates reduced npm audit findings from 22 to 8. The remai
 Zenzeito and Emprezus use generated 3D versions of their existing capybara and gold geometric brand marks. Angello’s original portfolio photos are served locally in the header, introduction, and biography. The sunglasses alpaca is retained as an unused alternative. Favicons and the touch icon now show a generated 3D portrait of Angello using a laptop, based on his original photo.
 
 Lecthur and Spendo have transparent 3D icons based on their App Store artwork, displayed in the introduction and app links. The navbar includes the personal 3D logo and “My portfolio”. A flow-root on the body prevents the header margin from exposing a differently colored strip above the page.
+
+The mobile app collection includes Lecthur, Spendo, DateSpots, PetSnack, AI Resume Builder, and AI Logo Maker. Names, descriptions, and App Store destinations are based on the local Zelandaware product catalog. New 3D badges preserve the corresponding app icon identities.
